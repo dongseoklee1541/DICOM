@@ -32,9 +32,22 @@ DICOM data object는 이름, ID등의 항목을 포함한 여러 속성과 영�
 
 * 픽셀 데이터는 다양한 표준으로 압축할 수 있다. (JPEG, lossless JPEG, JPEG 2000, RLE ...)
 
+또한 DICOM은 세가지 서로 다른 데이터 요소 인코딩 체계를 사용한다. 
 
+* 세가지 인코딩 체계 : GROUP(2 bytes) ELEMENT (2 bytes) VR (2 bytes)
 
+## Image display
 
+동일한 그레이 스케일 이미지를 여러 모니터에서 보여주는 것과, 다양한 프린터에서 똑같은 하드 카피 이미지를 제공하기 위해 DICOM committee는  lookup
+table(조회 테이블)을 개발했다.
+
+**DICOM grayscale standard display function(GSDF)** 를 사용하기 위해선, lookup curve를 가진 장치 또는 GSDF curve로 calibrated 된 장치에서 보거나
+인쇄해야 한다. 
+
+* lookup table : 디지털로 지정된 픽셀 값을 표시하는 테이블
+ 
+ 
+## Value representaitions
 ---------
 
 ##참고자료
