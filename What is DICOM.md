@@ -28,6 +28,10 @@ DICOM data object는 이름, ID등의 항목을 포함한 여러 속성과 영�
 
 대게 단일 이미지이지만, 속성중에는 여러 개의 프레임이 포함 되는 경우(cine loops 또는 다중 프레임 데이터)는 다중 이미지를 저장할 수 있다.
 
+* i.e) NM data : NM영상은 다차원 멀티 프레임 영상이다.이 경우 3차원 또는 4차원 데이터를 단일 DICOM개체에 캡슐화 할 수 있다.
+
+* 픽셀 데이터는 다양한 표준으로 압축할 수 있다. (JPEG, lossless JPEG, JPEG 2000, RLE ...)
+
 
 
 
@@ -35,8 +39,8 @@ DICOM data object는 이름, ID등의 항목을 포함한 여러 속성과 영�
 
 ##참고자료
 
-[DICOM 설명(by wiki)](https://en.wikipedia.org/wiki/DICOM)
+[DICOM 설명(by wiki)](https://en.wikipedia.org/wiki/DICOM){: target="_blank"}
 
-[DICOM 설명(slideshare)](https://slidesplayer.org/slide/12934045/)
+[DICOM 설명(slideshare)](https://slidesplayer.org/slide/12934045/){: target="_blank"}
 
-[CT 3D 촬영 원리](http://www.ucdenver.edu/academics/colleges/medicalschool/departments/Radiology/About%20Us/Faculty/education-research-portal/Pages/filtbackproj.aspx)
+[CT 3D 촬영 원리](http://www.ucdenver.edu/academics/colleges/medicalschool/departments/Radiology/About%20Us/Faculty/education-research-portal/Pages/filtbackproj.aspx){: target="_blank"}
