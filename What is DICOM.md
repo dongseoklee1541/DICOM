@@ -39,8 +39,8 @@ DICOM data object는 이름, ID등의 항목을 포함한 여러 속성과 영�
 
 ##참고자료
 
-[DICOM 설명(by wiki)](https://en.wikipedia.org/wiki/DICOM){: target="_blank"}
+[DICOM 설명(by wiki)](https://en.wikipedia.org/wiki/DICOM)
 
-[DICOM 설명(slideshare)](https://slidesplayer.org/slide/12934045/){: target="_blank"}
+[DICOM 설명(slideshare)](https://slidesplayer.org/slide/12934045/)
 
-[CT 3D 촬영 원리](http://www.ucdenver.edu/academics/colleges/medicalschool/departments/Radiology/About%20Us/Faculty/education-research-portal/Pages/filtbackproj.aspx){: target="_blank"}
+[CT 3D 촬영 원리](http://www.ucdenver.edu/academics/colleges/medicalschool/departments/Radiology/About%20Us/Faculty/education-research-portal/Pages/filtbackproj.aspx)
