@@ -103,9 +103,39 @@ There is also an ongoing media exchange test and "connectathon" process for CD m
 
 * connectathon : IHE 조직이 구성한 CD media 와 네트워크 운영에 대한 지속적인 media exchange test가 있다.
 
-### Application areas
+## Application areas
 
-DICOM 표준의 핵심 적용 영역은 **의료영상을 캡쳐하고 저장하며 배포하는 것** 이다. 또한 영상화 절차 작업 목록 관리, DVD와 같은 디지털 미디어에 영상 복사, 영상 획득 완료에 같은 절차 상태 보고, 영상의 저장확인,data sets의 암호화, 환자를 식별할 수 있는 개인정보 data sets 제거, 리뷰를 위한 영상 레이아웃 구성, 영상 조작 및 주석 저장, 영상 디스플레이 보정, ECG인코딩,  CAD 결과 인코딩, 구조화된 측정 데이터  인코딩, 마지막으로 수집 프로토콜 저장이 있다.
+DICOM 표준의 핵심 적용 영역은 **의료영상을 캡쳐하고 저장하며 배포하는 것** 이다.
+
+* 그외의 적용 영역 : 영상화 절차 작업 목록 관리, DVD와 같은 디지털 미디어에 영상 복사, 영상 획득 완료에 같은 절차 상태 보고, 영상의 저장확인,data sets의 암호화, 환자를 식별할 수 있는 개인정보 data sets 제거, 리뷰를 위한 영상 레이아웃 구성, 영상 조작 및 주석 저장, 영상 디스플레이 보정, ECG인코딩,  CAD 결과 인코딩, 구조화된 측정 데이터  인코딩, 마지막으로 수집 프로토콜 저장
+
+### Types of equipment
+
+DICOM information object definitions은 다양한 영상 장치에 의해 생성된 데이터를 인코딩 한다.
+
+* 다양한 영상 장치 : CT, MRI, 초음파, X-ray, 형광 투시, 혈관 조영술, 유방 조영술 등 
+
+DICOM은 영상 또는 imaging work flow와 관련된 장치에서도 구현된다.
+
+* 장치 목록 : PACS(picture archiving and communication systems, 사진 보관 및 통신 시스템), 영상 뷰어 및 디스플레이 스테이션,
+CAD(computer-aided detection/diagnosis systems, 컴퓨터 기반 감지,), 3D visualization system, clinical analysis applications(임상 실험 결과 app), image printer,  Film scanners, media burners&importer(DCIOM 파일을 저장하거나 분배하는 CDs,DVDs, etc), RIS(radiology information systems, 방사선 정보 시스템), VNA(vendor-neutral archives), EMR(electronic medical record, 전자의료 기록) systems, radiology reporting systems(방사선 보고 시스템) 
+
+### Fields of medicine
+
+많은 의학분야에서 DICOM으 전담하는 실무 그룹이 있다.
+
+* 해당 의학분야 : 방사선학, 심장학, 종양학, 핵 의학, 방사선 요법, 신경학, 정형 외과, 산부인과, 부인 과학, 안과, 치과, 악안면 수술, 피부과, 병리, 임상 시험, 수의학 및 의료 / 임상 사진 
+
+## DICOM Port number
+
+DICOM의 Port 번호는 104 이고, 11112 도 사용할 수 있다.
+
+## 단점
+
+DICOM 표준은 데이터 입력이 가능한 변수들이 너무 많아 문제가 있다. 이 단점은 대게 모든 필드를 데이터로 채우는 불일치에서 나타난다. 일부 필드는 비어 있고 일부 필드는 잘못된 데이터가 입력 되어 있기에 일부 영상들은 불안정한 경우가 많다.
+
+또한 파일 포멧은 악성코드가 포함되어 있을 가능성이 있고 코드 실행도 허용한다.
+
 
 
 ---------
