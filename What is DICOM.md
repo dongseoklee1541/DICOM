@@ -4,7 +4,7 @@
 저장하는데 사용된다.
 
 
-DICOM 파일은 DICOM 형식으로 영상 및 환자 데이터를 수신할 수 있는 두개의 개체 간에 교환 될 수 있다. 서로 다른 장치에는 지원하는 DICOM 클래스를
+DICOM 파일은 DICOM 형식으로 영상 및 환자 데이터를 수신할 수 있는 두개의 개체(entities) 간에 교환 될 수 있다. 서로 다른 장치에는 지원하는 DICOM 클래스를
 명확하게 표시한 DICOM conformance Statements가 제공되며 표준으로 파일 형식 정의와 TCP/IP를 사용하여 시스템 간에 통신하는 네트워크 통신 프로토콜이
 포함된다.
 
@@ -141,6 +141,8 @@ DICOM 표준은 데이터 입력이 가능한 변수들이 너무 많아 문제�
 ---------
 
 ## 참고자료
+
+[DICOM 기초](https://dcm4che.atlassian.net/wiki/spaces/d2/pages/1835038/A+Very+Basic+DICOM+Introduction)
 
 [DICOM 설명(by wiki)](https://en.wikipedia.org/wiki/DICOM)
 
