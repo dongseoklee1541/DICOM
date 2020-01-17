@@ -17,6 +17,9 @@ DICOM
 * 포함 : 영상 교환 프로토콜과 영상 압축, 3D시각화, 영상 표시 및 결과보고
 
 ## Data format
+
+<img src="https://github.com/dongseoklee1541/DICOM/blob/master/image/iod.png?raw=true" height="400" width="400">
+
 DICOM은 정보(영상, 환자ID, 환자의 증상 등)을 데이터 세트로 그룹화한다. 그 이유는 실수로 영상이 정보와 분리되지 않도록 하기 위함이다.
 이런 방식은 JPEG와 같은 이미지 형식에 이미지를 식별하고 설명하기 위한 태그가 내장 되어 있는 방식과 유사하다. 
 
@@ -24,6 +27,9 @@ DICOM은 정보(영상, 환자ID, 환자의 증상 등)을 데이터 세트로 �
 
 DICOM data object는 이름, ID등의 항목을 포함한 여러 속성과 영상 픽셀 데이터를 포함한 하나의 speical attribute로 구성된다. 즉 주 객체에 
 픽셀 데이터만 존재하고 "header"는 존재하지 않는다.
+
+<img src="https://github.com/dongseoklee1541/DICOM/blob/master/image/153156.png?raw=true" height="400" width="800">
+
 
 대게 단일 이미지이지만, 속성중에는 여러 개의 프레임이 포함 되는 경우(cine loops 또는 다중 프레임 데이터)는 다중 이미지를 저장할 수 있다.
 
