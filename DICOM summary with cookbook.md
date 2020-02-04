@@ -26,6 +26,14 @@ IOD("무엇") + DIMSE("어떻게") , 여러가지로 정의되어 있는 IOD와 
 여러가지 동작이 함께 동작해야하는 SOP 클래스를 의미한다. 예를들어 DICOM Print의 경우 통신 협상을 한 후, 전체 인쇄에 걸쳐서 공통적인 사항에 대한 정보
 교환 마지막으로 필름에 대해셔 몇 장의 영상을 찍을것인지 형식을 정하고 등등의 많은 과정을 거친 후 마지막으로 인쇄를 한다.
 
+### Unique IDentification (UID)
+고유한 번호를 만들려고 하는 것, 모든 검사, 시리즈, 영상은 물론 각각의 Abstract Syntax, Transfer Syntax마다 전세계적으로 고유한 번호를 부여하는 방식
+
+### Value Representation(VR)
+식별자의 타입, 각각의 Attribute 들은 VR의 지정된 형태로 기록된다. 그러나 Attribute에 일반적으로 사용되는 VR이 사용되었을 경우, Implicit VR 을 사용 하여 VR을 표시하지 않을 수 있다.
+
+
 ### Transfer Syntax
 DICOM File이 전송되는 형태, byte ordering(Little Endian, Big Endian) 및 압축의 유무 및 압축 방식 등을 나타냄
 * 예시 : Implicit Little Endian , Explicit Little Endian, Explicit Big Endian, DICOM JPEG , DICOM JPEG2000
+
