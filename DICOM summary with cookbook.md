@@ -74,3 +74,8 @@ Modality Worklist Management는 크게 두가지 서비스로 나뉜다.
 > OCS(Order Communication System) : 처방 전달 시스템. 의사의 처방을 인력이나 기계적인 방법에 의존하지 않고 컴퓨터를 이용해 신속,정확하게
 진료 지원부서에게 전달하는 시스템이다.
 
+#### Basic Worklist Management 
+Modality Worklist란 말 그대로 검사 장비에서 수행되어야 할 작업 목록이다. 
+* Matching Key : 원하를 정보를 얻기 위한 조건을 담아 보냄
+* Return Key : 그에 해당하는 검사 대상 환자의 정보를 담아서 보내주는 키
+
