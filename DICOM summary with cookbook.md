@@ -79,3 +79,59 @@ Modality Worklist란 말 그대로 검사 장비에서 수행되어야 할 작�
 * Matching Key : 원하를 정보를 얻기 위한 조건을 담아 보냄
 * Return Key : 그에 해당하는 검사 대상 환자의 정보를 담아서 보내주는 키
 
+#### Modality Performed Procedure Step(MPPS)
+장비에 기본적인 환자 및 검사정보가 제공되면 촬영 시작, 진행 및 종료의 과정을 거친다. MPPS는 이런 과정을 DICOM message의 형태로 보내
+쉽게 진행 상태를 알 수 있도록 한다.
+
+#### Stograge Commitment
+영상장비에서 특정 영상이 확실하게 서버에 저장이 되있는지를 확인할 때에 사용하는 것이다. 영상 장비에서 영상을 삭제하기 전에 서버에 Storage Commitment 방식으로 확실하게 저장이 되있는지 확인할 때 사용된다.
+
+#### Media Exchange
+의료영상을 네트워크가 아니라 CD 나 MOD,DVD와 같은 저장매체를 통해 영상을 전달할 때에 어떻게 해야 하는지 규정하는 부분이다. 업체마다 호환성이
+떨어지는 부분을 제거하기 위해 기록하는 방식을 표준화 한 것이다.
+
+DICOM 방식으로 구운 CD를 보통 DICOM CDR이라고 한다. 이 CD에는 반드시 DICOMDIR 이라고 하는 디렉토리 파일이 있어야 한다. 그래야 어떤 회사의 장비든지
+DICOMDIR 파일을 보고 CD에 무슨 내용이 들어있는지 알 수 있게 된다. 
+
+* DICOMDIR : DICOMDIR 은 CD 안에 들어있는 내용의 목차가 저장되어 있는 파일이라고 할 수 있다. 의료영상이 저장된 CD에 이 파일이 없다면, 그것은
+곧 비표준이라는 의미로 다른 장비와 호환이 되지 않는것을 의미한다.
+
+### Print Management Service System
+필름 등에 hard copy를 할 때 프린트하고자 하는 영상과 영상에 관련된 기타 데이터들을 관리하기 위해 사용하는 class 이다.
+
+#### Print Management Model
+프린트를 하기 위해선 세과정으로 나뉜다. ( Print Session Management - Queue Management - Print Process)
+
+* Print Session Management : hard copy를 하기 위해 필요한 모든 영상정보와 영상에 관련된 기타 데이터들을 'Film Session'에 정렬하는 과정이다.
+'Film Session'이란 하나 이상의 Film 으로 구성되어 있으며, Film 은 하나 이상의 image로 구성되어 있다. 즉 Film Session 에는 프린트 하고자
+하는 영상 뿐만이 아니라 각종 annotation, overlay 등의 정보와 프린트 될 각각의 film 의 layout 등 각종 정보를 포함하고 있다. 이렇기 때문에
+정렬하는 과정이 필요하다.
+
+* Queue Management : Film Session이 정렬 된 후 실제로 hard copy 되기 전에 다양한 print 관련 작업을 하기 위한 대기 모드
+
+* Print Process : 실제 hard copy 되는 과정
+
+----
+
+## DICOM Image SOP Instance
+### Image Information Model
+병원에 환자가 방문해 각 Modality 에서 촬영을 한다면, Patient, Study, Series, Image 는 1 : n의 포함 관계를 가지게 된다.
+
+#### Classification of Image Data
+Image Information 은 각자의 역할에 따라 Patient Information, Study Information, Series Information, Application Information 등으로
+나누어진다.
+
+Information Model 은 계층적으로 어떻게 다른 SOP Instance 안에 있는 information이 각기 다른 level로 Grouping 되어질 수 있는가를 정의하고
+있다.
+
+#### Image Types
+DICOM은 여러 가지의 Image SOP class type 들을 정의한다. 이러한 Image Type은 Image를 생성해내는 Modality 를 기준으로 정의하게 된다.
+
+#### 가장 기본적으로 꼭 필요한 Attributes
+* Identification Attribute : SOP Class UID, Study Instance UID, Series Instance UID, Image Instance UID(=SOP Instance UID) 등
+* Modality Type : Modality Type
+* Pixel Value Interpretation : Photometric Interpretation 등
+* Pixel Encoding : Bit Allocated, Bit Stored, High Bit, Pixel Representation, Planar Configuration 등
+* Pixel Matrix : Pixel Data
+
+위와 같은 Attributes들은 Type1 으로 지정하고 있으며, NULL 값이 들어갈 수 없다. 
