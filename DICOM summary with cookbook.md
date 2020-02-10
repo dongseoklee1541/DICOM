@@ -126,6 +126,7 @@ Information Model 은 계층적으로 어떻게 다른 SOP Instance 안에 있�
 
 #### Image Types
 DICOM은 여러 가지의 Image SOP class type 들을 정의한다. 이러한 Image Type은 Image를 생성해내는 Modality 를 기준으로 정의하게 된다.
+모든 Image SOP들은 모든 Image에서 Display와 기타 모든 목적을 위해 기본적으로 필요한 공통적인 부분들이 있다.
 
 #### 가장 기본적으로 꼭 필요한 Attributes
 * Identification Attribute : SOP Class UID, Study Instance UID, Series Instance UID, Image Instance UID(=SOP Instance UID) 등
@@ -135,3 +136,7 @@ DICOM은 여러 가지의 Image SOP class type 들을 정의한다. 이러한 Im
 * Pixel Matrix : Pixel Data
 
 위와 같은 Attributes들은 Type1 으로 지정하고 있으며, NULL 값이 들어갈 수 없다. 
+
+#### Image Processing Pipeline
+
+Modality에서 영상을 획득한 후 Display 이전까지의 processing 과정을 말하는 것이다. 
