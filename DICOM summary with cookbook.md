@@ -83,7 +83,7 @@ Modality Worklist란 말 그대로 검사 장비에서 수행되어야 할 작�
 장비에 기본적인 환자 및 검사정보가 제공되면 촬영 시작, 진행 및 종료의 과정을 거친다. MPPS는 이런 과정을 DICOM message의 형태로 보내
 쉽게 진행 상태를 알 수 있도록 한다.
 
-#### Stograge Commitment
+#### Storage Commitment
 영상장비에서 특정 영상이 확실하게 서버에 저장이 되있는지를 확인할 때에 사용하는 것이다. 영상 장비에서 영상을 삭제하기 전에 서버에 Storage Commitment 방식으로 확실하게 저장이 되있는지 확인할 때 사용된다.
 
 #### Media Exchange
